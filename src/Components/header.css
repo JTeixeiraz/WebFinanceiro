@@ -1,0 +1,26 @@
+header{
+    width: 100%;
+    background-color: rgb(240, 222, 222);
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    -webkit-box-shadow:0px 0px 21px 2px rgba(255,255,255,0.05);
+    -moz-box-shadow: 0px 0px 21px 2px rgba(255,255,255,0.05);
+    box-shadow: 0px 0px 21px 2px rgba(255,255,255,0.05);
+}
+
+#logo{
+    color: black;
+    font-size: 2rem;
+}
+
+#list{
+    color: black;
+    font-size: 2rem;
+}
+
+#containercards{
+    display: grid;
+}
