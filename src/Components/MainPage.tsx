@@ -1,6 +1,7 @@
 import Grafic from "./ComponentMain/Grafic";
 import Title from "./ComponentMain/Title";
 
+
 function MainPage(){
     return(
         <main>
