@@ -26,23 +26,60 @@ header{
 }
 
 .fechado{
+    display: none;
     background-color: red;
+    animation: slideOut 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from{
+        right: -50%;
+    }
+    to{
+        right: 0;
+    }
+}
+
+@keyframes slideOut {
+    from{
+        right: 0;
+    }   
+    to{
+        right: -50%;
+    } 
+}
+
+.aberto{
+    background-color: rgba(0, 0, 0, 0.95);
     position: absolute;
     top: 0;
     right: 0;
     width: 50%;
     height: 100vh;
     padding: 20px;
+    animation: slideIn 0.3s ease-out;
+    display: block;
 }
 
 .btnlist{
-    background-color: orange;
+    background-color: transparent;
     width: 100%;
-    height: 6vh;
+    color: white;
+    border-color: white;
+    border: solid 1px;
+    height: 6.5vh;
     border-radius: 20px;
     margin-top: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-size: 1.2rem;
+}
+
+#x{
+    color: white;
+    position: absolute;
+    right: 20px;
+    margin-top: 30px;
+    font-size: 2rem;
 }
